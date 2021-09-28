@@ -40,3 +40,15 @@ In this method I given an array of arrays calculate the average value for each a
 ```
 In this method I used JUnit to test for each of the Feature Tasks.
 ```
+
+* Analyzing Weather Data
+
+```
+Method that find the min and max values of array of arrays input. keep track of all the unique temperatures seen. create a String containing any temperature not seen during the month. Return that String.
+```
+
+
+* Tallying Election
+```
+Method that accepts a List of Strings representing votes and returns one string to show what got the most votes.
+```
