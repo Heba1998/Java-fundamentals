@@ -12,7 +12,7 @@ public class Library {
 
     public static void main(String[] args) {
         //calling the first function and printing the acceptedArray
-
+ System.out.println("--- lab2 ---\n\n");
         System.out.println("--- First function ---");
         roll(4);
         System.out.println("-------------------\n\n");
@@ -42,7 +42,7 @@ public class Library {
        System.out.println(Arrays.toString(LowestAverage(LowArray)));
         System.out.println("-------------------\n\n");
 
-
+ System.out.println("--- lab3 ---\n\n");
         System.out.println("--- Fifth function ---");
         int[][] weeklyMonthTemperatures = {
                 {66, 64, 58, 65, 71, 57, 60},
