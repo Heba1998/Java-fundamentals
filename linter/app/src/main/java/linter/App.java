@@ -30,7 +30,7 @@ public class App {
             }
         } catch (IOException exception){
              System.out.println("--- lab3 part two ---\n\n");
-            System.out.println("Error ❌❌");
+            System.out.println("Error");
         }
         return finalLines;
     }

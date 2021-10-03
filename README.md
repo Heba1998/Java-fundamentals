@@ -12,3 +12,5 @@
 
 
 3- [Maps and File I/O](./linter)
+
+4- [Inheritance and Interfaces](./inheritance)
