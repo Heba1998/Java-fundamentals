@@ -80,9 +80,9 @@ public class Restaurant {
     @Override
     public String toString() {
         if (review.isEmpty()) {
-            return "Name: " + name + ", Total Rate: " + stars + ", price category: " + price + ", Review: No review added.";
+            return "Name: " + name + "\n" +"Total Rate: " + stars +"\n" +"price category: " + price+"\n" +"Review: No review added.";
         } else {
-            return "Name: " + name + ", Total Rate: " + stars + ", price category: " + price + ", Review: " + review;
+            return "Name: " + name + "\n" +"Total Rate: " + stars +"\n" +"price category: " + price+"\n" +"Review: " + review;
         }
     }
 }
