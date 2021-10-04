@@ -11,7 +11,10 @@ class LibraryTest {
         Restaurant testRestaurant = new Restaurant("KFC");
         testRestaurant.setStars(4);
         testRestaurant.setPrice(5);
-        String result = "Name: KFC, Total Rate: 4.0, price category: $$$$$, Review: No review added.";
+        String result = "Name: KFC\n" +
+                "Total Rate: 4.0\n" +
+                "price category: $$$$$\n" +
+                "Review: No review added.";
         assertEquals(result , testRestaurant.toString());
     }
 
@@ -20,6 +23,38 @@ class LibraryTest {
         String result = "{Author: Heba, body: Amazing, Rate: 5}";
         assertEquals(result , testReview.toString() );
     }
+
+
+    /*  Test Shop Class - no Reviews */
+    @Test void testShopClass() {
+        Shop testShop = new Shop("Sameh Mall", "Mall in jordan");
+        testShop.setStars(3);
+        testShop.setPrice(4);
+        String result = "\nShop name: Sameh Mall\n" +
+                "Total Rate: 3.0\n" +
+                "price category: $$$$\n" +
+                "Descriptions: Mall in jordan\n" +
+                "Review: No review added.";
+        assertEquals(result , testShop.toString());
+    }
+
+
+    @Test void testTheaterClass() {
+        Theater testTheater = new Theater("Taj Cinemas");
+        testTheater.setStars(3);
+        testTheater.addMovie("Heroes");
+        testTheater.addMovie("Vivo");
+        testTheater.removeMovie("Vivo");
+        testTheater.addMovie("Cinderella story");
+        String result = "\nTheater name: Taj Cinemas\n" +
+                "Total Rate: 3.0\n" +
+                "Today's Movies: [Heroes, Cinderella story]\n" +
+                "Review: No review added.";
+        assertEquals(result , testTheater.toString());
+    }
+
+
+
 
 
 }

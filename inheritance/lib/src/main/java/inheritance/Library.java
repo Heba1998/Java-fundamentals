@@ -16,5 +16,26 @@ public class Library {
         firstRes.addReview("Amazing" , "Heba", 5);
 
         System.out.println(firstRes);
+
+
+        Shop addShop = new Shop("Mecca Mall" , "Mecca Mall is a shopping mall in Amman, Jordan");
+        addShop.setStars(3);
+        addShop.setPrice(4);
+        addShop.addReview("Amazing Shop" , "Heba", 5);
+        addShop.addReview("Good" , "Tala", 4);
+        addShop.addReview("Bad" , "Mohammed", 2);
+        System.out.println(addShop);
+
+
+        Theater addTheater = new Theater("Rainbow Theater Amman");
+        addTheater.setStars(4);
+        addTheater.addMovie("Heroes");
+        addTheater.addMovie("Vivo");
+        addTheater.removeMovie("Vivo");
+        addTheater.addMovie("Cinderella story");
+        addTheater.addMovieWithReview("Amazing" , "Eman", 5 , "Heroes");
+        addTheater.addMovieWithReview("WOW" , "Hala", 5 , "Cinderella story");
+        addTheater.addReview("Really nice place" , "Ahmed", 5);
+        System.out.println(addTheater);
     }
 }
